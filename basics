@@ -1,0 +1,110 @@
+1. Key Directories
+Directory	Meaning	Example / Notes
+/	Root directory	Top-level directory, contains all system folders (bin, home, etc, usr, var, tmp)
+/home	Parent directory for all users	Contains folders like /home/pramit18
+/home/pramit18	Home directory (your personal workspace)	Equivalent of C:\Users\Pramit in Windows
+.	Current directory	Always present, points to where you are now
+..	Parent directory	Always present, points to one level up
+2. Navigation Commands
+pwd       # Show current directory
+cd /      # Go to root directory
+cd ~      # Go to home directory
+cd ..     # Go to parent directory
+ls        # List files/folders
+ls -a     # List all files, including hidden (. and ..)
+ls -la    # Detailed listing with permissions, owners, sizes, etc.
+
+3. Creating & Managing Files/Folders
+mkdir folder_name        # Create directory
+rmdir folder_name        # Remove empty directory
+touch file_name.txt      # Create empty file
+nano file_name.txt       # Open file to edit
+cat file_name.txt        # Display file contents
+head -n 5 file_name.txt  # Show first 5 lines
+tail -n 5 file_name.txt  # Show last 5 lines
+cp file1 file2           # Copy file
+mv file1 folder/         # Move file or rename
+rm file_name             # Remove file
+
+4. File & Directory Permissions
+
+Format: drwxr-x---
+
+d → directory (- = file)
+
+First 3 (rwx) → owner permissions
+
+Next 3 (r-x) → group permissions
+
+Last 3 (---) → others’ permissions
+
+Examples:
+
+drwxr-xr-x → directory, owner can read/write/execute, group read/execute, others read/execute
+
+-rw-r--r-- → file, owner read/write, group read, others read
+
+5. Users & Ownership
+whoami          # Current user
+id              # User ID and group info
+ls -l           # Show owner & group of files/folders
+
+
+Owner: user who created the file/folder
+
+Group: users who share permissions
+
+Others: everyone else
+
+6. System Info
+uname -a        # Kernel info
+lsb_release -a  # OS version
+df -h           # Disk usage
+free -m         # Memory usage
+
+7. Package Management (Ubuntu/Debian)
+sudo apt update         # Update package lists
+sudo apt upgrade -y     # Upgrade packages
+sudo apt install tree -y # Install a package (tree)
+
+8. Linux Practice Notes
+
+Current Linux environment: WSL Ubuntu 22.04 LTS
+
+Practice flow:
+
+Navigate directories (/, /home, /home/pramit18)
+
+Explore ., .., and user directories
+
+Create folders/files, copy/move/delete
+
+Check and modify permissions
+
+Learn system commands (uname, df, free)
+
+Tip: Always use ls -la to see hidden files and permissions
+
+9. Key Takeaways
+
+. = current directory, .. = parent directory
+
+d in permissions = directory, - = file
+
+/home/pramit18 is your personal workspace
+
+Linux commands are case-sensitive
+
+Permissions control who can read/write/execute files
+
+💡 Next Steps for Git Repo
+
+Create a folder Linux_Basics in your Git repo.
+
+Save this file as Linux_Basics_Notes.md.
+
+Commit & push:
+
+git add Linux_Basics_Notes.md
+git commit -m "Add Linux basics notes"
+git push origin main
