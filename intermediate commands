@@ -1,0 +1,71 @@
+1. File & Directory Management
+
+pwd → show current directory (always check where you are)
+
+rm file.txt → delete a file
+
+rm -r folder/ → delete a directory recursively
+
+tree → view directory structure (install with sudo apt install tree)
+
+📄 2. File Viewing & Searching
+
+less filename → open file and scroll (q to quit)
+
+grep "text" file.txt → search inside files
+
+grep -r "keyword" /path/ → search inside all files recursively
+
+find /home/pramit18 -name "*.txt" → find all .txt files in a directory
+
+🛠️ 3. Permissions & Ownership
+
+ls -l → show permissions of files
+
+chmod 755 script.sh → change file permissions
+
+chown user:group file.txt → change ownership
+
+whoami → check current logged-in user
+
+📦 4. Package Management (Ubuntu/Debian)
+
+sudo apt update → update package list
+
+sudo apt upgrade → upgrade installed packages
+
+sudo apt install package-name → install software
+
+sudo apt remove package-name → uninstall software
+
+⚙️ 5. Processes & System Monitoring
+
+ps aux → list running processes
+
+top → live system monitor (press q to quit)
+
+htop → better process viewer (install with sudo apt install htop)
+
+kill -9 PID → kill a process by its ID
+
+🌐 6. Networking Basics
+
+ifconfig or ip a → show network interfaces
+
+ping google.com → test network connectivity
+
+curl http://example.com → fetch content from URL
+
+netstat -tulnp → show open ports (may need sudo apt install net-tools)
+
+📂 7. Archiving & Compression
+
+tar -cvf archive.tar folder/ → create tar archive
+
+tar -xvf archive.tar → extract tar archive
+
+gzip file.txt → compress file
+
+gunzip file.txt.gz → decompress file
+
+👉 These commands will make you comfortable as a DevOps/Linux engineer.
